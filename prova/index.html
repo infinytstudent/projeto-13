@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulador de Caixa Eletrônico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simulador de Caixa Eletrônico</h1>
+    <p>Saldo atual: <span id="saldo">R$ 1000</span></p>
+
+    <select id="operacao">
+        <option value="consultar">Consultar Saldo</option>
+        <option value="sacar">Sacar</option>
+        <option value="depositar">Depositar</option>
+    </select>
+
+    <input type="number" id="valor" placeholder="Digite o valor">
+    <button onclick="realizarOperacao()">Realizar</button>
+
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
